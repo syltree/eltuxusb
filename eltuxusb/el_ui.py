@@ -133,7 +133,7 @@ class eltuxusb:
             self.widgets.get_object('vbox3').hide()
 
             if self.debug:
-                print "#DEBUG# DEVICE NOT FOUND"
+                print ("#DEBUG# DEVICE NOT FOUND")
         else:
             self.status_msg = "state: "
             self.model = self.dev1.device_model
@@ -215,8 +215,8 @@ class eltuxusb:
             if self.debug:
 
                 self.widgets.get_object('label1').set_text("eltuxusb device manager (DEBUG MODE)")
-                print "#DEBUG# DEVICE STATE: %s" % self.status_msg  
-                print "#DEBUG# RECORDING COUNT: %d" % self.sample_count
+                print ("#DEBUG# DEVICE STATE: %s" % self.status_msg)
+                print ("#DEBUG# RECORDING COUNT: %d" % self.sample_count)
 
         return True
 
@@ -462,7 +462,7 @@ class eltuxusb:
             
             if self.debug:
                 self.widgets.get_object('label12').set_text("Debug mode, nothing sent to the device, see console")
-                print "#DEBUG# NEW CONFIG  : %s" % new_buffer          
+                print ("#DEBUG# NEW CONFIG  : %s" % new_buffer)          
             
             else:
 

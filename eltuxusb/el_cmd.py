@@ -31,14 +31,14 @@ class el_cmd:
             self.full_name = self.dev1.device_full_name
             self.sample_count = el1_math().base256to10(self.config[30:32])
 
-            print "Found: %s\nDownloading data to: %s" % (self.full_name, self.path) 
+            print ("Found: %s\nDownloading data to: %s" % (self.full_name, self.path)) 
 
             if self.dev1.download():
-                print "Finished: downloaded %s recordings" % self.sample_count
+                print ("Finished: downloaded %s recordings" % self.sample_count)
                 self.parse.data_translate(self.dev1.get_data(), self.dev1.get_config(), self.dev1.get_status(), self.path, self.model)
 
                 self.status = self.dev1.stop_recording()
-                print self.status
+                print (self.status)
 
     def recover(self):
         self.dev1 = el1_device(self.debug, self.recover_mode)
@@ -49,11 +49,11 @@ class el_cmd:
             self.dev1.init()
 
             if self.dev1.read_file(self.path):
-                print "File successfully imported"
+                print ("File successfully imported")
         
         else:
             #THIS CHECK SHOULD ME MADE INSIDE THE DEF READ_FILE
-            print "File does not exists"
+            print ("File does not exists")
 
         #self.dev1.restore_backup()
 
