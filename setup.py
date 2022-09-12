@@ -15,7 +15,7 @@
 
 from distutils.core import setup
 setup(name='eltuxusb',
-      version='dev',
+      version='2022.09',
       author = 'Romain Aviolat',
       author_email = 'r.aviolat@gmail.com',
       maintainer = 'David Strauss',
