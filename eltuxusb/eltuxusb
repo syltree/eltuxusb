@@ -5,7 +5,7 @@
 
 import os, argparse, sys
 
-from gi.repository import Gtk
+from git.repository import Gtk
 
 try:
     # Try the non-PIP case.
