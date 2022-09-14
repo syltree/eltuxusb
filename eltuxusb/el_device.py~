@@ -7,7 +7,7 @@ import sys
 import datetime
 import time
 #import el_devices_settings *
-from el_devices_settings import el_settings, el_buffer
+from eltuxusb.el_devices_settings import el_settings, el_buffer
 
 class el1_buffer:
     "Device configuration buffer"

@@ -4,9 +4,9 @@
 import datetime, time, os
 
 #from el_device import init, get_config, get_last_err, get_data, get_status, stop_recordings # <- need to clean, dirty
-from el_device import * # <- need to clean, dirty
-from el_input import *  # <- need to clean, dirty
-from el_parse import *  # <- need to clean, dirty
+from eltuxusb.el_device import * # <- need to clean, dirty
+from eltuxusb.el_input import *  # <- need to clean, dirty
+from eltuxusb.el_parse import *  # <- need to clean, dirty
 
 class el_cmd:
     def __init__(self, path, debug, recover_mode):

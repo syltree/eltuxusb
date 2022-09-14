@@ -6,10 +6,10 @@ from gi.repository import Gtk
 
 #pygtk.require("2.0")
 
-from el_device import * # <- need to clean, dirty
-from el_input import *  # <- need to clean, dirty
-from el_parse import *  # <- need to clean, dirty
-from el_plot import *  # <- need to clean, dirty
+from eltuxusb.el_device import * # <- need to clean, dirty
+from eltuxusb.el_input import *  # <- need to clean, dirty
+from eltuxusb.el_parse import *  # <- need to clean, dirty
+from eltuxusb.el_plot import *  # <- need to clean, dirty
 #from el_devices_settings import * # <- need to clean, dirty
 
 # Auto-determine the location of the Glade file.

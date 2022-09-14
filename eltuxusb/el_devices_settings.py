@@ -240,7 +240,7 @@ class el_buffer:
 
     def setup(self):
         
-        from el_device import el1_math
+        from eltuxusb.el_device import el1_math
         self.math = el1_math()
 
         # The first 32 bytes are the same for every devices
